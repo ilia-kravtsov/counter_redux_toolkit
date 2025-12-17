@@ -10,11 +10,3 @@ export interface CounterState {
   lastUpdatedBy: LastUpdatedBy;
 }
 
-export interface CounterActions {
-  increment(): void;
-  decrement(): void;
-  reset(): void;
-  setStep(step: number): void;
-}
-
-export type CounterStore = CounterState & CounterActions;
